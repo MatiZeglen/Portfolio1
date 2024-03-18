@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="head">
+                <img src="ja 4.jpg" alt="myphoto">
+                <i class="fa-solid fa-code" id="logo"> .DEV</i>
+            </div>
+            <ul>
+                <li> <a href="#main"> Home </a> </li>
+                <li> <a href="#skills"> Skills </a> </li>
+                <li> <a href="#about"> About Me </a> </li>
+                <li> <a href="#portfolio"> Portfolio </a> </li>
+                <li> <a href="#contact"> Contact </a> </li>
+            </ul>
+            <button> Contact me </button>
+            <button id="menuButton" onclick="openMenu()"> <i class='bx bx-menu'></i> </button>
+        </nav>
+        <section class="main" id="main">
+            <div class="left">
+                <h5> Hello, I'm Mateusz </h5>
+                <h3><span>WEB DEVELOPER</span> AND PROGRAMMING BEGINNER</h3>
+                <p>
+                    On weekends, I spend time at the university studying part-time, and during the week I try to implement the knowledge 
+                    I acquired during my studies in a practical way.
+                </p>
+                <button> Get in Touch </button>
+            </div>
+            <div class="right">
+                <img src="ja 1.jpg" alt="myphoto">
+            </div>
+        </section>
+    <article class="skills" id="skills">
+        <h5>My Skills</h5>
+        <section class="skills-icons">
+            <div class="skills-information">
+                <i class="fa-brands fa-js" id="js">Javascript</i>
+                <p><progress value="50" max="100">></p>
+            </div>
+            <div class="skills-information">
+                <i class="fa-brands fa-css3" id="css">CSS</i>
+                <p><progress value="60" max="100"></p>
+            </div>
+            <div class="skills-information">
+                <i class="fa-brands fa-html5" id="html"> HTML5</i>
+                <p><progress value="70" max="100"></p>
+            </div>
+            <div class="skills-information">
+                <i class="fa-brands fa-php" id="php">PHP</i>
+                <p><progress value="50" max="100"></p>
+            </div>
+            <div class="skills-information">
+                <i class="fa-solid fa-database" id="sql">SQL</i> 
+                <p><progress value="60" max="100"></p>
+            </div>
+            <div class="skills-information">
+                <i class="fa-solid fa-code" id="c">C++</i>
+                <p><progress value="65" max="100"></p>
+            </div>
+            <div class="skills-information">
+                <i class="fa-brands fa-discord" id="discord">Discord</i>
+                <p><progress value="85" max="100"></p>
+            </div>
+            <div class="skills-information">
+                <i class="fa-brands fa-python" id="python">Python</i>
+                <p><progress value="20" max="100"></p>
+            </div> 
+        </section>
+    </article>
+    <article class="about" id="about">
+        <section class="left">
+           <img src="ja 2.jpg" alt="myphoto">
+        </section>
+        <section class="right">
+            <h3> About me </h3>
+            <p> I am a young, inspired programming enthusiast. I spend a lot of time acquiring knowledge and developing my practical programming skills. 
+            On weekends, I spend time at  the university studying part-time. In my free time, I really love working in CSS, JS and PHP.
+            In the meantime, I administer several Discord servers and manage my own Discord bot, created for my fellow students. 
+            I am an ambitious student who works hard on my development.</p><br>
+            <p>I also love <span> programming, playing video games, driving and cooking. </span></p>
+            
+        </section>
+    </article>
+    <article class="portfolio" id="portfolio">
+        <header class="header">
+            <section class="info">
+                <h5> Get in Touch with my Project </h5>
+                <button> <a href="https://github.com/MatiZeglen"><i class="fa-brands fa-github">Visit my GitHub</i></a></button>
+                <h5>Future projects will appear here. </h5>
+            </section>
+        </header>
+        <section class="portfolio-items">
+            <div class="item">
+                <img src="restauracja.jpg" alt="restaurant">
+                <div class="info">
+                <p>
+                        Responsive Restaurant Website
+                    </p> 
+                    <a href="https://matizeglen.github.io/Portfolio_Restaurant/"><i class="fa-solid fa-link"></i>Check out my Project </a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="portfolio-items">
+            <div class="item">
+                <img src="admindashboard.jpg" alt="dashboard">
+                <div class="info">
+                <p>
+                        Responsive Admin Dashboard
+                    </p> 
+                    <a href="https://matizeglen.github.io/portfolio_dashboard/"><i class="fa-solid fa-link"></i>Check out my Project (WiP)</a>
+                </div>
+            </div>
+            </div>
+        </section>
+    </article>
+</section>
+<script src="https://kit.fontawesome.com/a4cfcc7878.js" crossorigin="anonymous"></script>
+<section id="contact">
+    <h1 class="section-heading">Let's work together</h1>
+    <p>Find me on</p>
+    <p>
+        <a href="https://github.com/MatiZeglen"><i class="fab fa-github"> Github </i></a> <br>
+        <a href="https://www.linkedin.com/in/mateusz-żegleń-1126262b6/"><i class="fab fa-linkedin-in"> Linkedin </i></a> <br>
+        <a href="https://www.facebook.com/mateusz.zeglen.96/"><i class="fa-brands fa-facebook"> Facebook </i></a> <br>
+        <a href="https://www.instagram.com/mateusz.zeglen.96/"><i class="fa-brands fa-instagram"> Instagram </i></a> <br>
+        <a href=""><i class="fa-regular fa-envelope">My e-mail: </i> mateuszzeglen@op.pl</a> <br>
+        
+    </p>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

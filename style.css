@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+html
+{
+    scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav .head img
+{
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 2px 5px black;
+    transition: all 0.3s ease;
+}
+nav .head img:hover
+{
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+a
+{
+    text-decoration: none;
+    color: #1c1e53;
+    transition: color 0.3s ease;
+}
+a:hover
+{
+    color: #5e3bee;
+}
+h5
+{
+    font-size: 20px;
+}
+li
+{
+    list-style: none;
+}
+nav
+{
+    background-color: #fff;
+    position: sticky;
+    top:0;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 5px 80px rgb(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 20px;
+}
+nav.logo, footer .logo
+{
+    display: flex;
+    align-items: center;
+}
+nav.logo a, footer .logo a
+{
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav .logo img, footer .logo img
+{
+    width: 40px;
+    height: 50px;
+}
+nav ul, footer .top ul
+{
+    display: flex;
+    gap: 40px;
+}
+nav button
+{
+    color: #1c1e53;
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #1c1e53;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px;
+}
+
+nav button:hover
+{
+    background-color: #5e3bee;
+    border-color: #5e3bee;
+    color: #fff;
+}
+nav button#menuButton
+{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+.main
+{
+    background-color: #deebee;
+    padding: 90px 85px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.main .left 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.main .left h3
+{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.main .left h3 span
+{
+    color: #5e3bee;
+    text-shadow: 2px 2px 4px #5e3bee;
+}
+.main .left p
+{
+    color: #1c1e53;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.main .left button
+{
+    margin-top: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #5e3bee;
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #5e3bee;
+}
+.main .right img
+{
+    width: 500px;
+    box-shadow: 15px 15px 20px black;
+    transition: all 0.3s ease;
+}
+.main .right img:hover
+{
+    width: 550px;
+    transition: all 0.3s ease;
+}
+.skills h3, .about .right h3, .portfolio .header h3, .feedback h3
+{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.skills
+{
+    background-color: black;
+}
+.skills h5
+{
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    text-shadow: 1px 1px 2px;
+}
+.skills .skills-icons
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+.skills .skills-icons .skills-information
+{
+    padding: 2rem;
+    text-align: center;
+}
+.skills-information progress 
+{
+    background-color: white;
+    border: 1px solid white;
+}
+.skills-information progress::-webkit-progress-value 
+{
+    background-color: white;
+    border-radius: 0;
+}
+.about
+{
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap:60px;
+}
+.about .left
+{
+    background-color: #deebee;
+    border-radius: 10px 10px 0 0;
+}
+.about .left img
+{
+    width: 100%;
+    box-shadow: 15px 15px 20px black;
+    transition: all 0.3s ease;
+}
+.about .left img:hover
+{
+    width: 110%;
+    transition: all 0.3s ease;
+}
+.about .right p
+{
+    font-size: 16px;
+    margin-top: 30px;
+}
+.about .right h3
+{
+    text-shadow: 2px 2px 20px;
+}
+.about .right span
+{
+    color:#5e3bee;
+    text-shadow: 1px 1px 5px;
+    font-size: 110%;
+}
+.portfolio
+{
+    background-color: #deebee;
+    padding: 110px 85px;
+}
+.portfolio .header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.portfolio .header button 
+{
+    background-color: #792f9e;
+    padding: 10px 20px;
+    display: flex;
+    cursor: pointer;
+    gap: 8px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #792f9e;
+    align-items: center;
+}
+.portfolio .header button a
+{
+    font-size: 26px;
+    transition: all 0.5s ease;
+}
+.portfolio .header button a:hover
+{
+    color: white;
+    font-size: 34px;
+    transition: all 0.5s ease;
+}
+.portfolio .portfolio-items 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.portfolio .portfolio-items .item
+{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.portfolio .portfolio-items .item:hover
+{
+    border-color: #5e3bee;
+    transition: all 0.3s ease;
+}
+.portfolio .portfolio-items .item img
+{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+    border: 1px solid #5e3bee;
+}
+.portfolio .portfolio-items .item .info
+{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 32px 42px;
+}
+.portfolio .portfolio-items .item .info p
+{
+    font-size: 13px;
+}
+.portfolio .portfolio-items .item .info a
+{
+    text-decoration: underline;
+    text-underline-offset:10px;
+    text-decoration-color:#5e3bee
+}
+.portfolio .portfolio-items .item .info a i
+{
+    margin-left: 2px;
+    font-size: 16px;
+}
+#contact
+{
+    padding: 50px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#contact address
+{
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+#logo
+{
+    color: black;
+    transition: all 0.3s ease;
+}
+#logo:hover
+{
+    color: black;
+    transition: all 0.3s ease;
+    font-size: 130%;
+}
+#js
+{
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 5px 5px 10px yellow;
+}
+#js:hover
+{
+    font-size: 150%;
+    transition: all 0.3s ease;
+    color: #f1e05a;
+    cursor: pointer;
+    border: white;
+}
+#css
+{
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 5px 5px 10px purple;
+}
+#css:hover
+{
+    font-size: 200%;
+    transition: all 0.3s ease;
+    color: purple;
+    cursor: pointer;
+    border: white;
+}
+#html
+{
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 5px 5px 10px red;
+}
+#html:hover
+{
+    font-size: 200%;
+    transition: all 0.3s ease;
+    color: #e44c27;
+    cursor: pointer;
+    border: white;
+}
+#php
+{
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 5px 5px 10px rgb(21, 142, 255);
+}
+#php:hover
+{
+    font-size: 200%;
+    transition: all 0.3s ease;
+    color: #4e5d94;
+    cursor: pointer;
+    border: white;
+}
+#sql
+{
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 5px 5px 10px orange;
+}
+#sql:hover
+{
+    font-size: 200%;
+    transition: all 0.3s ease;
+    color: #e38c00;
+    cursor: pointer;
+    border: white;
+}
+#c
+{
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 5px 5px 10px rgb(231, 36, 68);
+}
+#c:hover
+{
+    font-size: 200%;
+    transition: all 0.3s ease;
+    color: #f34b7e;
+    cursor: pointer;
+    border: white;
+}
+#discord
+{
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 5px 5px 10px #2963ad;
+}
+#discord:hover
+{
+    font-size: 200%;
+    transition: all 0.3s ease;
+    color: #7489dc;
+    cursor: pointer;
+    border: white;
+}
+#python
+{
+    color: white;
+    transition: all 0.3s ease;
+    text-shadow: 5px 5px 10px green;
+}
+#python:hover
+{
+    font-size: 200%;
+    transition: all 0.3s ease;
+    color: #1c8d42;
+    cursor: pointer;
+    border: white;
+}
+@media screen and (max-width: 1200px)
+{
+    .main .left h5
+    {
+        font-size: 18px;
+    }
+    .main .left h3
+    {
+        font-size: 36px;
+    }
+    .main .left p
+    {
+        font-size: 18px;
+    }
+    .main .right img
+    {
+        width: 380px;
+    }
+    .main .right img:hover
+    {
+        width: 420px;
+    }
+    .about .right p
+    {
+        font-size: 15px;
+    }
+    .about .right h3, .portfolio .header h3
+    {
+        font-size: 32px;
+    }
+    .about .left img 
+    {
+        width: 320px;
+    }
+    .about .left img:hover
+    {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 992px)
+{
+    nav 
+    {
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav button
+    {
+        display: none
+    }
+    nav.open .head
+    {
+        display: none;
+    }
+    nav.open ul
+    {
+        display: flex;
+    }
+    nav ul
+    {
+        gap: 20px;
+    }
+    nav ul li a
+    {
+        font-size: 15px;
+    }
+    .main 
+    {
+        flex-direction: column;
+    }
+    .about
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .portfolio .portfolio-items
+    {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .portfolio .portfolio-items .item
+    {
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px)
+{
+    nav 
+    {
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+    nav ul 
+    {
+        display: none;
+    }
+    nav button#menuButton
+    {
+        display: flex;
+    }
+    .main
+    {
+        padding: 42px;
+    }
+    .about 
+    {
+        padding: 85px;
+    }
+    .portfolio
+    {
+        padding: 60px 42px;
+    }
+    .portfolio .portfolio-items
+    {
+        gap: 18px;
+    }
+}
+@media screen and (max-width: 576px)
+{
+    nav .head i
+    {
+        font-size: 18px;
+    }
+    .main .left h3
+    {
+        font-size: 32px;
+    }
+    .main .left p
+    {
+        font-size: 16px;
+    }
+    .main .left button
+    {
+        width: 100%;
+    }
+    .portfolio .portfolio-items .item
+    {
+        width: 80%;
+    }
+    .portfolio .header button
+    {
+        width: 100%;
+        justify-content: center;
+    }
+    .portfolio .header button a
+    {
+        font-size: 35px;
+    }
+    .portfolio .header button a:hover
+    {
+        font-size: 40px;
+    }
+}
