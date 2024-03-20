@@ -243,6 +243,10 @@ nav button#menuButton
     justify-content: space-between;
     margin-bottom: 60px;
 }
+.portfolio .header h5
+{
+    margin-top: 10px;
+}
 .portfolio .header button 
 {
     background-color: #792f9e;
@@ -252,8 +256,11 @@ nav button#menuButton
     gap: 8px;
     border: none;
     border-radius: 10px;
-    box-shadow: 2px 2px 15px #792f9e;
+    box-shadow: 5px 5px 10px #792f9e;
     align-items: center;
+    animation-name: github ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .portfolio .header button a
 {
@@ -697,4 +704,12 @@ nav button#menuButton
     50%{text-shadow: 5px 5px 10px #1c8d42;}
     75%{text-shadow: 5px 5px 10px grey;}
     100%{text-shadow: 5px 5px 10px #1c8d42;}
+}
+@keyframes github
+{
+    0%{box-shadow: 5px 5px 10px #792f9e;}
+    25%{box-shadow: 5px 5px 10px grey;}
+    50%{box-shadow: 5px 5px 10px #792f9e;}
+    75%{box-shadow: 5px 5px 10px grey;}
+    100%{box-shadow: 5px 5px 10px #792f9e;}
 }
