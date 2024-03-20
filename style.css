@@ -349,6 +349,9 @@ nav button#menuButton
     color: white;
     transition: all 0.3s ease;
     text-shadow: 5px 5px 10px yellow;
+    animation-name: js ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #js:hover
 {
@@ -363,6 +366,9 @@ nav button#menuButton
     color: white;
     transition: all 0.3s ease;
     text-shadow: 5px 5px 10px purple;
+    animation-name: css ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #css:hover
 {
@@ -377,6 +383,9 @@ nav button#menuButton
     color: white;
     transition: all 0.3s ease;
     text-shadow: 5px 5px 10px red;
+    animation-name: html ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #html:hover
 {
@@ -391,6 +400,9 @@ nav button#menuButton
     color: white;
     transition: all 0.3s ease;
     text-shadow: 5px 5px 10px rgb(21, 142, 255);
+    animation-name: php ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #php:hover
 {
@@ -405,6 +417,9 @@ nav button#menuButton
     color: white;
     transition: all 0.3s ease;
     text-shadow: 5px 5px 10px orange;
+    animation-name: sql ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #sql:hover
 {
@@ -419,6 +434,9 @@ nav button#menuButton
     color: white;
     transition: all 0.3s ease;
     text-shadow: 5px 5px 10px rgb(231, 36, 68);
+    animation-name: c ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #c:hover
 {
@@ -433,6 +451,9 @@ nav button#menuButton
     color: white;
     transition: all 0.3s ease;
     text-shadow: 5px 5px 10px #2963ad;
+    animation-name: discord ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #discord:hover
 {
@@ -447,6 +468,9 @@ nav button#menuButton
     color: white;
     transition: all 0.3s ease;
     text-shadow: 5px 5px 10px green;
+    animation-name: python ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #python:hover
 {
@@ -609,4 +633,68 @@ nav button#menuButton
     {
         font-size: 40px;
     }
+}
+@keyframes js
+{
+    0%{text-shadow: 5px 5px 10px #f1e05a;}
+    25%{text-shadow: 5px 5px 10px grey;}
+    50%{text-shadow: 5px 5px 10px #f1e05a;}
+    75%{text-shadow: 5px 5px 10px grey;}
+    100%{text-shadow: 5px 5px 10px #f1e05a;}
+}
+@keyframes css
+{
+    0%{text-shadow: 5px 5px 10px purple;}
+    25%{text-shadow: 5px 5px 10px grey;}
+    50%{text-shadow: 5px 5px 10px purple;}
+    75%{text-shadow: 5px 5px 10px grey;}
+    100%{text-shadow: 5px 5px 10px purple;}
+}
+@keyframes html
+{
+    0%{text-shadow: 5px 5px 10px #e44c27;}
+    25%{text-shadow: 5px 5px 10px grey;}
+    50%{text-shadow: 5px 5px 10px #e44c27;}
+    75%{text-shadow: 5px 5px 10px grey;}
+    100%{text-shadow: 5px 5px 10px #e44c27;}
+}
+@keyframes php
+{
+    0%{text-shadow: 5px 5px 10px #4e5d94;}
+    25%{text-shadow: 5px 5px 10px grey;}
+    50%{text-shadow: 5px 5px 10px #4e5d94;}
+    75%{text-shadow: 5px 5px 10px grey;}
+    100%{text-shadow: 5px 5px 10px #4e5d94;}
+}
+@keyframes sql
+{
+    0%{text-shadow: 5px 5px 10px #e38c00;}
+    25%{text-shadow: 5px 5px 10px grey;}
+    50%{text-shadow: 5px 5px 10px #e38c00;}
+    75%{text-shadow: 5px 5px 10px grey;}
+    100%{text-shadow: 5px 5px 10px #e38c00;}
+}
+@keyframes c
+{
+    0%{text-shadow: 5px 5px 10px #f34b7e;}
+    25%{text-shadow: 5px 5px 10px grey;}
+    50%{text-shadow: 5px 5px 10px #f34b7e;}
+    75%{text-shadow: 5px 5px 10px grey;}
+    100%{text-shadow: 5px 5px 10px #f34b7e;}
+}
+@keyframes discord
+{
+    0%{text-shadow: 5px 5px 10px #7489dc;}
+    25%{text-shadow: 5px 5px 10px grey;}
+    50%{text-shadow: 5px 5px 10px #7489dc;}
+    75%{text-shadow: 5px 5px 10px grey;}
+    100%{text-shadow: 5px 5px 10px #7489dc;}
+}
+@keyframes python
+{
+    0%{text-shadow: 5px 5px 10px #1c8d42;}
+    25%{text-shadow: 5px 5px 10px grey;}
+    50%{text-shadow: 5px 5px 10px #1c8d42;}
+    75%{text-shadow: 5px 5px 10px grey;}
+    100%{text-shadow: 5px 5px 10px #1c8d42;}
 }
