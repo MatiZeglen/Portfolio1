@@ -275,19 +275,21 @@ nav button#menuButton
 }
 .portfolio .portfolio-items 
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: space-between;
 } 
 .portfolio .portfolio-items .item
 {
-    width: 30%;
+    width: 60%;
     background-color: #fff;
     border-radius: 10px;
     border-bottom: 4px solid transparent;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    margin: 20px;
 }
 .portfolio .portfolio-items .item:hover
 {
@@ -564,13 +566,14 @@ nav button#menuButton
     }
     .portfolio .portfolio-items
     {
+        display: flex;
         gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
     .portfolio .portfolio-items .item
     {
-        width: 50%;
+        width: 80%;
     }
 }
 @media screen and (max-width:768px)
